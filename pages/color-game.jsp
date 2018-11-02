@@ -77,9 +77,9 @@
                     </li>
                   </ul>
                   <div class="center">
-                    <button class="btn-floating btn-large waves-effect waves-light blue" id="blue" onclick="buttonClicked('A')"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light red darken-2" id="red" onclick="buttonClicked('B')"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light yellow" id="yellow" onclick="buttonClicked('C')"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light blue" id="blue" onclick="buttonClicked('A'); M.toast({html: 'Blue was clicked!', displayLength: 800})"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light red darken-2" id="red" onclick="buttonClicked('B');  M.toast({html: 'Red was clicked', displayLength: 800})"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light yellow" id="yellow" onclick="buttonClicked('C');  M.toast({html: 'Yellow was clicked', displayLength: 800})"></button>
                   <div class="card">
                     <div id="card-color" class="card-content" style="width: 100%; height: 55%;"></div>
                   </div>
@@ -100,7 +100,7 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
-
+  
   var blue = "";
   var red = "";
   var yellow = "";
