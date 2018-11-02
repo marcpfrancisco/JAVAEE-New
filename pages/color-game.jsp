@@ -10,11 +10,13 @@
   <title>JAVAEE - Color Game</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper ">
   
-  <nav class="nav-wrapper teal darken-4 navbar-fixed">
-    <div class="container">
+  
+  <nav class="nav-wrapper teal darken-4">
+    <div class="container ">
     <a href="#" class="brand-logo">Logo</a>
+    <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="../index.jsp">Home</a></li>
       <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -22,6 +24,7 @@
     </ul>
     </div>
   </nav>
+  
 
   <!-- Dropdown Structure -->
   <ul id="dropdown1" class="dropdown-content">
@@ -56,12 +59,16 @@
     <a href="binary-addition.jsp">Binary Addition</a>
     </li>
   </ul>
-
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="../index.jsp">Home</a></li>
+      <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="../about.jsp">About</a></li>
+  </ul
 
     <div id="color-game">
       <div class="row">
         <div class="col s12 m12 l6 offset-l3">
-          <div class="card horizontal" style="margin-top: 35px; height: 80vh !important;">
+          <div class="card horizontal" style="margin-top: 35px; height: 90vh !important;">
             <div class="card-stacked">
               <div class="card-content">
                 <div class="container-fluid">
@@ -72,12 +79,13 @@
                     </li>
                   </ul>
                   <div class="center">
-                    <button class="btn-floating btn-large waves-effect waves-light blue" id="blue" onclick="existingLogic()"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light red" id="red" onclick="existingLogic()"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light yellow" id="yellow" onclick="existingLogic()"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light blue" id="blue" onclick="buttonClicked('A')"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light red darken-2" id="red" onclick="buttonClicked('B')"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light yellow" id="yellow" onclick="buttonClicked('C')"></button>
                   <div class="card">
                     <div id="card-color" class="card-content" style="width: 100%; height: 55%;"></div>
                   </div>
+                  <button class="btn black text-white right" id="reset">RESET</button>
                 </div>
               </div>
             </div>
@@ -95,19 +103,75 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
 
-  // var red = "red";
-  // var blue = "blue";
-
-  document.getElementById('red').onclick = function() {
-    $("#card-color").css("background", "yellow");
-  };
+  var blue = "";
+  var red = "";
+  var yellow = "";
  
+  function buttonClicked(color) {
+    if(color == 'A') {
+      blue = "blue";
+      $("#card-color").css("background", "#2196F3");
+
+      //To make purple #7b1fa2
+      if(blue == "blue" && red == "red") {
+        $("#card-color").css("background", "#7b1fa2");
+        blue = "";
+        red = "";
+      }
+      //To make green #388e3c
+      else if(blue == "blue" && yellow =="yellow") {
+        $("#card-color").css("background", "#388e3c");
+        blue="";
+        yellow="";
+      }
+    }else if(color == 'B') {
+      red = "red";
+      $("#card-color").css("background", "#d32f2f");
+
+      //To make purple #7b1fa2
+      if(red == "red" && blue == "blue") {
+        $("#card-color").css("background", "#7b1fa2");
+        red = "";
+        blue = "";
+      }
+      //To make orange #f57c00
+      else if (red == "red" && yellow == "yellow") {
+        $("#card-color").css("background", "#f57c00");
+        red = "";
+        yellow = "";
+      }
+
+    }else if(color == 'C') {
+      yellow = "yellow";
+      $("#card-color").css("background", "#FFEB3B");
+
+      //To make green #388e3c
+      if(yellow == "yellow" && blue == "blue") {
+        $("#card-color").css("background", "#388e3c");
+        yellow = "";
+        blue = "";
+      }
+      //To make orange #f57c00
+      else if(yellow == "yellow" && red == "red") {
+        $("#card-color").css("background", "#f57c00");
+        yellow = "";
+        red = "";
+      }
+    }
+  }
+
   $(document).ready(function(){
 
     $(".dropdown-trigger").dropdown({
       coverTrigger: false,
       hover: true,
       constrainWidth: false
+    });
+
+    $('.sidenav').sidenav();
+
+    $('#reset').click(function(){
+      $("#card-color").css("background", "");
     });
 
   });
