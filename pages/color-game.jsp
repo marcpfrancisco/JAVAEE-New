@@ -71,7 +71,7 @@
               <div class="card-content">
                 <div class="container-fluid">
                   <span class="card-title center-align"> <strong>Color Game</strong> </span>
-                  <ul>
+                  <ul class="browser-default">
                     <li>
                       <p class="lead">The objective of the game is to combine two primary colors to produce secondary colros.</p>
                     </li>
