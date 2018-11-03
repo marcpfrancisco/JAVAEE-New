@@ -1,0 +1,9 @@
+#wordbox {
+    /*opacity: 0;*/
+    margin: 30px auto 0;
+    display: block;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    transition: 1s linear;
+}

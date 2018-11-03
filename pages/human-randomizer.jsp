@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+  <link rel="stylesheet" href="../css/randomizer.css">
   <title>JAVAEE - Human Randomizer</title>
 </head>
 <body>
@@ -56,6 +57,31 @@
         <a href="binary-addition.jsp">Binary Addition</a>
       </li>
     </ul>
+
+    <div id="randomizer">
+      <div class="row">
+        <div class="col s12 m12 l6 offset-l3">
+          <div class="card horizontal" style="margin-top: 35px; height: 80vh !important;">
+            <div class="card-stacked">
+              <div class="card-content">
+                <div class="container-fluid">
+                  <span class="card-title center-align"><strong>Human Randomizer</strong> </span>
+                  <ul class="browser-default">
+                    <li>
+                      <p class="lead">Click spin to generate random names.</p>
+                    </li>
+                  </ul>
+                  <form name="WordForm">  
+                    <input type="text" name="WordBox" id="wordbox"><br>
+                    <button class="btn waves-effect waves-light" type="button" value="Generate" onClick="PickRandomWord(document.WordForm);" id="button">Generate</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script
@@ -64,7 +90,81 @@
   crossorigin="anonymous"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+  <script src="../js/jquery.jSlots.js"></script>
   <script>
+    var NumberOfWords = 28
+
+    var words = new BuildArray(NumberOfWords)
+
+    // Use the following variables to 
+    // define your random words:
+    words[1] = "Jacob"
+    words[2] = "Madison"
+    words[3] = "Joshua"
+    words[4] = "Hannah"
+    words[5] = "Christopher"
+    words[6] = "Andrew"
+    words[7] = "Daniel"
+    words[8] = "Ethan"
+    words[9] = "Joseph"
+    words[10] = "William"
+    words[11] = "Anthony"
+    words[12] = "Nicholas"
+    words[13] = "David"
+    words[14] = "Brianna"
+    words[15] = "Ryan"
+    words[16] = "Tyler"
+    words[17] = "James"
+    words[18] = "John"
+    words[19] = "Jonathan"
+    words[20] = "Brandon"
+    words[21] = "Christian"
+    words[22] = "Dylan"
+    words[23] = "Victoria"
+    words[24] = "Noah"
+    words[25] = "Samuel"
+    words[26] = "Emily"
+    words[27] = "Michael"
+    words[28] = "Emma"
+    words[29] = "Matthew"
+    words[30] = "Olivia"
+    words[31] = "Abigail"
+    words[32] = "Isabella"
+    words[33] = "Ashley"
+    words[34] = "Samantha"
+    words[35] = "Elizabeth"
+    words[36] = "Alexa"
+    words[37] = "Sarah"
+    words[38] = "Alyssa"
+    words[39] = "Grace"
+    words[40] = "Sophia"
+    words[41] = "Taylor"
+    words[42] = "Alexander"
+    words[43] = "Lauren"
+    words[44] = "Ava"
+    words[45] = "Kayla"
+    words[46] = "Jessica"
+    words[47] = "Natalie"
+    words[48] = "Chloe"
+    words[49] = "Anna"
+    words[50] = "Zachary"
+
+    function BuildArray(size){
+    this.length = size
+    for (var i = 1; i <= size; i++){
+    this[i] = null}
+    return this
+    }
+
+    function PickRandomWord(frm) {
+    // Generate a random number between 1 and NumberOfWords
+    var rnd = Math.ceil(Math.random() * NumberOfWords)
+
+    // Display the word inside the text box
+    frm.WordBox.value = words[rnd]
+    }
+
     $(".dropdown-trigger").dropdown({
       coverTrigger: false,
       hover: true,
