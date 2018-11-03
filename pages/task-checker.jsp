@@ -56,6 +56,105 @@
         <a href="binary-addition.jsp">Binary Addition</a>
       </li>
     </ul>
+
+    <div id="task-checker">
+      <div class="row">
+        <div class="col s12 m12 l6 offset-l3">
+          <div class="card horizontal" style="margin-top: 35px; height: 80vh !important;">
+            <div class="card-stacked">
+              <div class="card-content">
+                <div class="container-fluid">
+                  <span class="card-title center-align"><strong>Task Checker</strong></span>
+                  <ul class="browser-default">
+                    <li>
+                      <p class="lead">Organize your To-Do list</p>
+                    </li>
+                  </ul>
+                  <form action="" method="POST">
+                    <div class="row">
+                      <div class="col">
+                        <div class="container-fluid">
+                          <div class="checkboxes">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Love yourself</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Focus on achieving your goal</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Appreciate little thingst</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Exert effort to your work</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Share happiness to others</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Face the reality</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Learn new things</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Explore new beginnings</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Challenge yourself</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>Be happy all the time</span>
+                              </label>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- first col end-->
+                    </div>
+                    <!-- firs row end-->
+                    <div class="loader">
+                      <p class="right-align">5/10</p>
+                      <div class="progress">
+                          <div class="determinate" style="width: 50%"></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script
