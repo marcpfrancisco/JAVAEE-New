@@ -82,8 +82,8 @@
                 <div class="row">
                   <div class="col s12 m12 l12">
                     <div id="answer-wrapper" class="center-align">
-                      <h5>Got It!</h5>
-                      <img class="responsive-img" width="430" src="../assets/rabbit.jpeg">
+                      <h5 id="result" style="visibility:hidden;">Result</h5>
+                      <img id="img" class="responsive-img" src="../assets/rabbit.jpeg" style="visibility:hidden;">
                     </div>
                   </div>
                 </div>
@@ -116,18 +116,24 @@
           M.toast({html: 'Choose date!'});
         }
         else{
+          document.getElementById('result').style.visibility='visible'; 
+          document.getElementById('img').style.visibility='visible';
+
           let options = { year: 'numeric', month: 'long', day: 'numeric' };
           let date = $('.datepicker').val();
           let date_now = new Date();
           let new_date = date_now.toLocaleDateString("en-US", options);
           if(new Date(date) < new Date(new_date)){
-             alert('before');
+          document.getElementById('result').innerHTML = "Oh no! Clock is Behind";
+           document.getElementById("img").src = "../assets/puppy.jpeg";
           }
           else if(new Date(date) > new Date(new_date)){
-            alert('after');
+            document.getElementById('result').innerHTML = "Hey! That's the future already";
+            document.getElementById("img").src = "../assets/kitten.jpeg";
           }
           else{
-            alert('now');
+          document.getElementById('result').innerHTML = "Got it!";
+           document.getElementById("img").src = "../assets/rabbit.jpeg";
           }
         }
       });
