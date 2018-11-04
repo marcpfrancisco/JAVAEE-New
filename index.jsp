@@ -14,18 +14,18 @@
     <div id="wrapper">
       <ul class="sidenav" id="mobile-demo">
           <li><a href="javascript:void(0)">Home</a></li>
-          <li><a href="#about">About</a></li>
           <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <nav class="nav-wrapper blue-grey darken-3">
           <div class="container">
-            <a href="javascript:void(0)" class="brand-logo">Logo</a>
+            <a href="javascript:void(0)" class="brand-logo">JAVAEE</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="javascript:void(0)">Home</a></li>
-              <li><a href="#about">About</a></li>
               <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
             <!-- Dropdown Structure -->
