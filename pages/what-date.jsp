@@ -6,7 +6,7 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="../materialize/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>JAVAEE - What date is it?</title>
+  <title>What date is it?</title>
 </head>
 <style>
   .datepicker {
@@ -20,11 +20,11 @@
   <div class="wrapper">
     <nav class="nav-wrapper teal darken-4">
       <div class="container">
-        <a href="#" class="brand-logo">Logo</a>
+        <a href="../index.jsp" class="brand-logo">Logo</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="">Home</a></li>
+          <li><a href="../index.jsp">Home</a></li>
           <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="about.jsp">About</a></li>
+          <li><a href="../about.jsp">About</a></li>
         </ul>
       </div>
     </nav>
