@@ -170,12 +170,12 @@
   </div>
 
   <div class="container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui error quae voluptate esse suscipit illo culpa totam illum voluptates recusandae.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui error quae voluptate esse suscipit illo culpa totam illum voluptates recusandae.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui error quae voluptate esse suscipit illo culpa totam illum voluptates recusandae.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui error quae voluptate esse suscipit illo culpa totam illum voluptates recusandae.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui error quae voluptate esse suscipit illo culpa totam illum voluptates recusandae.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui error quae voluptate esse suscipit illo culpa totam illum voluptates recusandae.</p>
+    <blockquote>
+      <p class="flow-text"><em>&OpenCurlyDoubleQuote;Give a man a program, frustrate him for a day.
+          Teach a man to program, frustrate him for a lifetime.&CloseCurlyDoubleQuote;</em> 
+          <br>
+          &dash;<em>Muhammad Waseem</em> </p>
+    </blockquote>
   </div>
 
   <section class="container section scrollspy" id="contact">
