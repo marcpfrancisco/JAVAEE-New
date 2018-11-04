@@ -81,7 +81,7 @@
                   </ul>
                   <form name="WordForm">  
                     <input type="text" name="WordBox" id="wordbox"><br>
-                    <button class="btn waves-effect waves-light" type="button" value="Generate" onClick="PickRandomWord(document.WordForm);" id="button">Generate</button>
+                    <button class="btn waves-effect waves-light right" type="button" value="Generate" onClick="PickRandomWord(document.WordForm);" id="button">Generate</button>
                   </form>
                 </div>
               </div>
