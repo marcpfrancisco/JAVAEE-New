@@ -69,8 +69,7 @@
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <h2 class="center-align text-darken-1">JAVAEE</h2>
-          <p>Case Study, A colloection of programs for the completion of the program course Java Enterprise Programming </p>
+          <h1 class="center-align"><span>J</span><span>A</span><span>V</span><span>A</span> <span>P</span><span>R</span><span>O</span><span>G</span><span>R</span><span>A</span><span>M</span></h1>
         </div>
       </div>
     </div>
@@ -229,7 +228,7 @@
   </footer>
 
   <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red">
+    <a class="btn-floating btn-large red" id="button" style="display: none;">
     <i class="large material-icons" style="font-size: 3rem;">keyboard_arrow_up</i>
   </a>
   </div>
@@ -259,6 +258,22 @@
   $('.scrollspy').scrollSpy();
 
   $('.fixed-action-btn').floatingActionButton();
+  
+
+  $(window).scroll(function() {
+     if($(this).scrollTop() >= 100 ) {
+       $("#button").fadeIn(400);
+       $("#button").css("display", 'visible');
+     }else {
+      $("#button").fadeOut(400);
+      $("#button").css("display", 'hidden');
+     }
+  });
+
+  $("#button").click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop: 0}, '300');
+  });
   
 });
       
