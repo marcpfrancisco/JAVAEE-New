@@ -7,23 +7,23 @@
   <link rel="stylesheet" href="materialize/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
-  <title>Java Enterprise Programming</title>
+  <title>About - Members</title>
 </head>
 <body>
   <div class="wrapper">
 
     <ul class="sidenav" id="mobile-demo">
-       <li><a href="javascript:void(0)">Home</a></li>
+       <li><a href="index.jsp">Home</a></li>
           <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="about.jsp">About</a></li>
     </ul>
 
     <nav class="nav-wrapper teal darken-4">
       <div class="container">
-        <a href="javascript:void(0)" class="brand-logo">Logo</a>
+        <a href="index.jsp" class="brand-logo">Logo</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="index.jsp">Home</a></li>
           <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="about.jsp">About</a></li>
         </ul>
