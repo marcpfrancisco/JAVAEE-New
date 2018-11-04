@@ -141,88 +141,29 @@
   <!-- Compiled and minified JavaScript -->
   <script src="../materialize/js/materialize.js"></script>
   <script>
-    var NumberOfWords = 28
+    let boy = ["Jacob","Michael","Joshua","Matthew","Christopher","Andrew","Daniel","Ethan","Joseph","William","Anthony","Nicholas","David","Alexander","Ryan","Tyler","James","John","Jonathan","Brandon","Christian","Dylan","Zachary","Noah","Samuel"];
 
-    var words = new BuildArray(NumberOfWords)
+    let girl = ["Emma","Olivia","Sophia","Isabella","Ava","Mia","Emily","Abigail","Madison","Charlotte","Harper","Sofia","Avery","Elizabeth","Amelia","Evelyn","Ella","Chloe","Victoria","Aubrey","Grace","Zoey","Natalie","Addison","Lillian"];
 
-    // Use the following variables to 
-    // define your random words:
-    words[1] = "Jacob"
-    words[2] = "Madison"
-    words[3] = "Joshua"
-    words[4] = "Hannah"
-    words[5] = "Christopher"
-    words[6] = "Andrew"
-    words[7] = "Daniel"
-    words[8] = "Ethan"
-    words[9] = "Joseph"
-    words[10] = "William"
-    words[11] = "Anthony"
-    words[12] = "Nicholas"
-    words[13] = "David"
-    words[14] = "Brianna"
-    words[15] = "Ryan"
-    words[16] = "Tyler"
-    words[17] = "James"
-    words[18] = "John"
-    words[19] = "Jonathan"
-    words[20] = "Brandon"
-    words[21] = "Christian"
-    words[22] = "Dylan"
-    words[23] = "Victoria"
-    words[24] = "Noah"
-    words[25] = "Samuel"
-    words[26] = "Emily"
-    words[27] = "Michael"
-    words[28] = "Emma"
-    words[29] = "Matthew"
-    words[30] = "Olivia"
-    words[31] = "Abigail"
-    words[32] = "Isabella"
-    words[33] = "Ashley"
-    words[34] = "Samantha"
-    words[35] = "Elizabeth"
-    words[36] = "Alexa"
-    words[37] = "Sarah"
-    words[38] = "Alyssa"
-    words[39] = "Grace"
-    words[40] = "Sophia"
-    words[41] = "Taylor"
-    words[42] = "Alexander"
-    words[43] = "Lauren"
-    words[44] = "Ava"
-    words[45] = "Kayla"
-    words[46] = "Jessica"
-    words[47] = "Natalie"
-    words[48] = "Chloe"
-    words[49] = "Anna"
-    words[50] = "Zachary"
-
-    function BuildArray(size){
-    this.length = size
-    for (var i = 1; i <= size; i++){
-    this[i] = null}
-    return this
-    }
-
-    function PickRandomWord(frm) {
-    // Generate a random number between 1 and NumberOfWords
-    var rnd = Math.ceil(Math.random() * NumberOfWords)
-
-    // Display the word inside the text box
-    frm.WordBox.value = words[rnd]
-    }
-
+    let combine = boy.concat(girl);
+    
+    $('#button').click(function(){
+      let randomname = combine[Math.floor(Math.random() * combine.length)];
+      if(boy.includes(randomname)){
+        $('#wordbox').css('background',' #1e88e5');
+      }
+      else{
+        $('#wordbox').css('background','#d81b60');
+      }
+      $('#wordbox').val(randomname);
+    });
   $(document).ready(function(){
-
     $(".dropdown-trigger").dropdown({
       coverTrigger: false,
       hover: true,
       constrainWidth: false
     });
-
     $('.sidenav').sidenav();
-
   });
     
   </script>
