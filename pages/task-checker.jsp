@@ -9,13 +9,21 @@
     rel="stylesheet">
   <title>Task Checker</title>
 </head>
+<style>
+.dropdown-content li>a, .dropdown-content li>span {
+  font-size: 16px;
+  color: #2e2e2e;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+</style>
 <body>
   <div class="wrapper">
     
   <ul class="sidenav" id="mobile-demo">
       <li><a href="../index.jsp">Home</a></li>
-          <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
-          
+      <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
     </ul>
 
     <nav class="nav-wrapper blue-grey darken-3">
@@ -31,34 +39,34 @@
         <!-- Dropdown Structure -->
         <ul id="dropdown1" class="dropdown-content">
           <li>
-            <a href="pages/color-game.jsp">Color Game</a>
+            <a href="color-game.jsp">Color Game</a>
           </li>
           <li>
-            <a href="pages/name-compatibility.jsp">Name Compatibility</a>
+            <a href="name-compatibility.jsp">Name Compatibility</a>
           </li>
           <li>
-            <a href="pages/what-date.jsp">What date is it?</a>
+            <a href="what-date.jsp">What date is it?</a>
           </li>
           <li>
-            <a href="pages/cooking.jsp">Who is cooking?</a>
+            <a href="cooking.jsp">Who is cooking?</a>
           </li>
           <li>
-            <a href="pages/human-evolution.jsp">Human Evolution</a>
+            <a href="human-evolution.jsp">Human Evolution</a>
           </li>
           <li>
-            <a href="pages/human-randomizer.jsp">Human Randomizer</a>
+            <a href="human-randomizer.jsp">Human Randomizer</a>
           </li>
           <li>
-            <a href="pages/passing-chances.jsp">Passing Chances</a>
+            <a href="passing-chances.jsp">Passing Chances</a>
           </li>
           <li>
-            <a href="pages/quiz-app.jsp">Quiz Application</a>
+            <a href="quiz-app.jsp">Quiz Application</a>
           </li>
           <li>
-            <a href="pages/task-checker.jsp">Task Checker</a>
+            <a href="task-checker.jsp">Task Checker</a>
           </li>
           <li>
-            <a href="pages/binary-addition.jsp">Binary Addition</a>
+            <a href="binary-addition.jsp">Binary Addition</a>
           </li>
         </ul>
       </div>
