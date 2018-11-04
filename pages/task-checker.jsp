@@ -151,9 +151,9 @@
                     </div>
                     <!-- firs row end-->
                     <div class="loader">
-                      <p class="right-align">5/10</p>
+                      <p class="right-align" id="tasks">0/10</p>
                       <div class="progress">
-                          <div class="determinate" style="width: 50%"></div>
+                          <div class="determinate"></div>
                       </div>
                     </div>
                   </form>
@@ -175,13 +175,38 @@
   <script>
   $(document).ready(function(){
 
-    $(".dropdown-trigger").dropdown({
-      coverTrigger: false,
-      hover: true,
-      constrainWidth: false
-    });
 
-    $('.sidenav').sidenav();
+  var count = 0;
+  var checked = 0;
+
+  function countBoxes() { 
+    count = $("input[type='checkbox']").length;
+  }
+  
+  countBoxes();
+  $(":checkbox").click(countBoxes);
+  
+  
+    function countChecked() {
+    checked = $("input:checked").length;
+
+    var percentage = parseInt(((checked / count) * 100),10);
+    $('.determinate').css('width', percentage + '%').attr('aria-valuenow', percentage).text(percentage + "%");
+    $('#tasks').text(checked + "/10");
+    
+  }
+  
+  countChecked();
+
+  $(":checkbox").click(countChecked);
+
+  $(".dropdown-trigger").dropdown({
+    coverTrigger: false,
+    hover: true,
+    constrainWidth: false
+  });
+
+  $('.sidenav').sidenav();
 
   });
 
