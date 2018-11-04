@@ -76,7 +76,7 @@
                   <span class="card-title center-align"><strong>Human Randomizer</strong> </span>
                   <ul class="browser-default">
                     <li>
-                      <p class="lead">Click spin to generate random names.</p>
+                      <p class="lead">Click to generate random names.</p>
                     </li>
                   </ul>
                   <form name="WordForm">  

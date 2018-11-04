@@ -75,7 +75,14 @@
                     <p class="lead">The system will check wether the date chosend is behind, future or now</p>
                   </li>
                 </ul>
-                <input type="text" class="datepicker" readonly>
+                <div class="input-field">
+                  <i class="material-icons prefix">calendar_today</i>
+                  <input type="text" class="datepicker" readonly>
+                </div>
+                <div class="answer">
+                  <h5 class="center-align">Got It!</h5>
+                  <img class="materialboxed center-align" width="430" src="../assets/rabbit.jpeg">
+                </div>
               </div>
             </div>
           </div>
@@ -87,15 +94,17 @@
     <!-- Compiled and minified JavaScript -->
     <script src="../materialize/js/materialize.js"></script>
     <script>
-      $(".dropdown-trigger").dropdown({
+      $(document).ready(function(){
+        $('.datepicker').datepicker();
+        $('.materialboxed').materialbox();
+
+        $(".dropdown-trigger").dropdown({
         coverTrigger: false,
         hover: true,
         constrainWidth: false
       });
-      $(document).ready(function(){
-        $('.datepicker').datepicker();
-      });
-      $('.datepicker').change(function(){
+
+       $('.datepicker').change(function(){
         if($('.datepicker').val() == ''){
           M.toast({html: 'Choose date!'});
         }
@@ -115,6 +124,10 @@
           }
         }
       });
+
+    });
+
+     
     </script>
 </body>
 </html>
