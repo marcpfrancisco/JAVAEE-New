@@ -66,6 +66,39 @@
       </div>
     </nav>
 
+    <div id="human-evolution">
+      <div class="row">
+        <div class="col s12 l8 offset-l2">
+          <div class="card horizontal" style="margin-top: 35px; height: 90vh !important;">
+            <div class="card-stacked">
+              <div class="card-content">
+                <div class="container-fluid">
+                  <span class="card-title center-align"><strong>Human Evolution</strong></span>
+                  <div class="row">
+                    <div class="col s12 l4 offset-l3">
+                      <div class="input-field">
+                        <input type="text" name="age" id="age" class="" maxlength="2">
+                        <label for="name">Enter your age</label>
+                      </div>
+                    </div>
+                    <div class="col s12 l5">
+                      <div class="input-field">
+                        <button class="btn waves-effect waves-light" name="submitAge" id="submitAge">SUBMIT</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 l5">
+                      <img src="../assets/0 - 1.png" alt="" class="responsive-img" style="height: 25%;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
      
   </div>
 
