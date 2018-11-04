@@ -79,9 +79,13 @@
                   <i class="material-icons prefix">calendar_today</i>
                   <input type="text" class="datepicker" readonly>
                 </div>
-                <div class="answer">
-                  <h5 class="center-align">Got It!</h5>
-                  <img class="materialboxed s12 m12 l6 offset-l3" width="430" src="../assets/rabbit.jpeg">
+                <div class="row">
+                  <div class="col s12 m12 l12">
+                    <div id="answer-wrapper" class="center-align">
+                      <h5>Got It!</h5>
+                      <img class="responsive-img" width="430" src="../assets/rabbit.jpeg">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -89,6 +93,7 @@
         </div>
       </div>
     </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
