@@ -18,7 +18,7 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="../index.jsp">Home</a></li>
           <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="../about.jsp">About</a></li>
+          
         </ul>
       </div>
     </nav>
@@ -59,18 +59,11 @@
 
     <div id="cooking">
       <div class="row">
-        <div class="col s12 m12 l6 offset-l3">
-          <div class="card horizontal" style="margin-top: 35px; height: 80vh;">
-            <div class="card-stacked">
-              <div class="card-content">
-                <form action="" method="POST">
-                  <div class="input-field">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Enter password</label>
-                  </div>
-                </form>
-              </div>
-            </div>
+        <div class="col s12 m6 l12 ">
+          <div class="container">
+            <form action="" method="POST">
+              
+            </form>
           </div>
         </div>
       </div>

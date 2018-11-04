@@ -24,7 +24,6 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="../index.jsp">Home</a></li>
           <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="../about.jsp">About</a></li>
         </ul>
       </div>
     </nav>
@@ -128,7 +127,7 @@
            document.getElementById("img").src = "../assets/puppy.jpeg";
           }
           else if(new Date(date) > new Date(new_date)){
-            document.getElementById('result').innerHTML = "Hey! That's the future already";
+            document.getElementById('result').innerHTML = "Hey! That's future already";
             document.getElementById("img").src = "../assets/kitten.jpeg";
           }
           else{
