@@ -81,7 +81,7 @@
                 </div>
                 <div class="answer">
                   <h5 class="center-align">Got It!</h5>
-                  <img class="materialboxed center-align" width="430" src="../assets/rabbit.jpeg">
+                  <img class="materialboxed s12 m12 l6 offset-l3" width="430" src="../assets/rabbit.jpeg">
                 </div>
               </div>
             </div>
@@ -96,7 +96,9 @@
     <script>
       $(document).ready(function(){
         $('.datepicker').datepicker();
-        $('.materialboxed').materialbox();
+        $('.materialboxed').materialbox({
+          open: false
+        });
 
         $(".dropdown-trigger").dropdown({
         coverTrigger: false,
