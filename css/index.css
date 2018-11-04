@@ -1,0 +1,42 @@
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: #2e2e2e;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+.section {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+#container1{
+    background: #fafafa; 
+    height: 600px;
+}
+
+#container1 h2 {
+
+    line-height: 450px;
+}
+
+#container2{
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        min-height: 500px;
+    }
+}
+
+.tabs .indicator {
+    background-color: #d81b60 !important;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background: transparent;
+}
