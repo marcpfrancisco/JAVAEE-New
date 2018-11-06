@@ -77,19 +77,19 @@
                   <div class="row">
                     <div class="col s12 l4 offset-l3">
                       <div class="input-field">
-                        <input type="text" name="age" id="age" class="" maxlength="2">
+                        <input type="text" name="age" id="age" class="" maxlength="2" onkeypress="return isNumberKey(event)">
                         <label for="name">Enter your age</label>
                       </div>
                     </div>
                     <div class="col s12 l5">
                       <div class="input-field">
-                        <button class="btn waves-effect waves-light" name="submitAge" id="submitAge">SUBMIT</button>
+                        <button class="btn waves-effect waves-light" name="submitAge" id="submitAge" onclick="getAge()">SUBMIT</button>
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col s12 l5">
-                      <img src="../assets/0 - 1.png" alt="" class="responsive-img" style="height: 25%;">
+                    <div class="col s12">
+                      <img src="" alt=""  id="img" class="responsive-img" style="height: 40%; visibility: hidden;">
                     </div>
                   </div>
                 </div>
@@ -109,11 +109,58 @@
   <!-- Compiled and minified JavaScript -->
   <script src="../materialize/js/materialize.js"></script>
   <script>
+
+  function isNumberKey(evt)
+	   {
+		   var keycode = event.which;
+           if (!(event.shiftKey == false && (keycode == 46 || keycode == 8 || keycode == 37 || keycode == 39 || keycode == 110 || (keycode >= 48 && keycode <= 57)))) {
+          event.preventDefault();
+       }
+
+	   }
+
+  function getAge(){  
+
+  var age = document.getElementById("age").value; 
+
+  if(age == ""){
+
+    alert('Enter Age!');  
+
+  } else {
+    document.getElementById('img').style.visibility='visible';
+
+
+   if(age >= 0 && age <= 1) {
+    document.getElementById("img").src = "../assets/0 - 1.png";
+  } else if(age >= 2 && age <= 3){
+    document.getElementById("img").src = "../assets/0 - 3.png";
+  } else if(age >= 4 && age <= 5){
+    document.getElementById("img").src = "../assets/0 - 4.png";
+  } else if(age >= 6 && age <= 11) {
+    document.getElementById("img").src = "../assets/0 - 11.png";
+  } else if(age >= 12 && age <= 19){
+    document.getElementById("img").src = "../assets/0 - 19.png";
+  } else if(age >= 20 && age <= 39) {
+    document.getElementById("img").src = "../assets/0 - 39.png";
+  } else if(age >= 40 && age <= 55) {
+     document.getElementById("img").src = "../assets/0 - 55.png";
+  } else if(age >= 56) {
+    document.getElementById("img").src = "../assets/0 - 60.png";
+  } else {
+
+      }
+    }
+  }  
     $(".dropdown-trigger").dropdown({
       coverTrigger: false,
       hover: true,
       constrainWidth: false
     });
+
+    $('#age').on("cut copy paste",function(e) {
+      e.preventDefault();
+   });
     
   </script>
 </body>

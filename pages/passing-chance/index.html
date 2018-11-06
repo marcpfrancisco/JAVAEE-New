@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Widget</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="../../materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body style="padding: 0;">
+
+    <nav class="nav-wrapper blue-grey darken-3">
+        <div class="container">
+          <a href="../../index.jsp" class="brand-logo">JAVAEE</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="../../index.jsp">Home</a></li>
+            <li><a class="dropdown-trigger" href="javascript:void(0)" data-target="dropdown1">Programs<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../../index.jsp">About</a></li>
+            <li><a href="../../index.jsp">Contact</a></li>
+          </ul>
+          <!-- Dropdown Structure -->
+          <ul id="dropdown1" class="dropdown-content">
+            <li>
+              <a href="./../color-game.jsp">Color Game</a>
+            </li>
+            <li>
+              <a href="./../name-compatibility.jsp">Name Compatibility</a>
+            </li>
+            <li>
+              <a href="./../what-date.jsp">What date is it?</a>
+            </li>
+            <li>
+              <a href="./../cooking.jsp">Who is cooking?</a>
+            </li>
+            <li>
+              <a href="./../human-evolution.jsp">Human Evolution</a>
+            </li>
+            <li>
+              <a href="./../human-randomizer.jsp">Human Randomizer</a>
+            </li>
+            <li>
+              <a href="./../passing-chance/index.html">Passing Chances</a>
+            </li>
+            <li>
+              <a href="./../quiz-app.jsp">Quiz Application</a>
+            </li>
+            <li>
+              <a href="./../task-checker.jsp">Task Checker</a>
+            </li>
+            <li>
+              <a href="./../binary-addition.jsp">Binary Addition</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="row">
+      <div class="col s12 l5 offset-l3">
+          <div class="container">
+              <div class="chat">
+                <div class="chat-header clearfix">
+                  <img src="chatbot.jpeg" alt="avatar" />
+                  
+                  <div class="chat-about">
+                    <div class="chat-with"><i class="fa fa-circle online"></i> AI ChatBot</div>
+                  </div>
+                </div> <!-- end chat-header -->
+                
+                <div class="chat-history">
+                  <ul>
+                     
+                  </ul>
+                  
+                </div> <!-- end chat-history -->
+                
+                <div class="chat-message clearfix">
+                  <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
+                  
+                  <button><i class="material-icons right">send</i>  Send</button>
+          
+                </div> <!-- end chat-message -->
+                
+              </div> <!-- end chat -->
+              
+            </div> <!-- end container -->
+      </div>
+    </div>
+    
+
+<script id="message-template" type="text/x-handlebars-template">
+  <li class="clearfix">
+    <div class="message-data align-right">
+      <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+      <span class="message-data-name" >You</span> <i class="fa fa-circle me"></i>
+    </div>
+    <div class="message other-message float-right">
+      {{messageOutput}}
+    </div>
+  </li>
+</script>
+
+<script id="message-response-template" type="text/x-handlebars-template">
+  <li>
+    <div class="message-data">
+      <span class="message-data-name"><i class="fa fa-circle online"></i> AI Bot</span>
+      <span class="message-data-time">{{time}}, Today</span>
+    </div>
+    <div class="message my-message">
+      {{response}}
+    </div>
+  </li>
+</script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js'></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="../../materialize/js/materialize.min.js"></script>
+  <script  src="js/index.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $(".dropdown-trigger").dropdown({
+        coverTrigger: false,
+        hover: true,
+        constrainWidth: false
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
