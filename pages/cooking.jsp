@@ -155,31 +155,31 @@
                       </div>
                     </div>
                     <div class="col s12 l4">
-                        <div id="recipe5">
-                          <img src="../assets/sbaboy.jpg" alt="Kare-Kare" class="responsive-img">
-                          <ul class="browser-default">
-                            <li>Manok</li>
-                            <li>Sibuyas</li>
-                            <li>Paminta</li>
-                            <li>Toyo</li>
-                            <li>Suka</li>
-                          </ul>
-                          <p>Ganito magluto ng adobo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quasi.</p>
-                        </div>
+                      <div id="recipe5">
+                        <img src="../assets/sbaboy.jpg" alt="Kare-Kare" class="responsive-img">
+                        <ul class="browser-default">
+                          <li>Manok</li>
+                          <li>Sibuyas</li>
+                          <li>Paminta</li>
+                          <li>Toyo</li>
+                          <li>Suka</li>
+                        </ul>
+                        <p>Ganito magluto ng adobo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quasi.</p>
                       </div>
-                      <div class="col s12 l4">
-                        <div id="recipe6">
-                          <img src="../assets/dinuguan.jpg" alt="Kare-Kare" class="responsive-img">
-                          <ul class="browser-default">
-                            <li>Manok</li>
-                            <li>Sibuyas</li>
-                            <li>Paminta</li>
-                            <li>Toyo</li>
-                            <li>Suka</li>
-                          </ul>
-                          <p>Ganito magluto ng adobo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quasi.</p>
-                        </div>
+                    </div>
+                    <div class="col s12 l4">
+                      <div id="recipe6">
+                        <img src="../assets/bicol.jpg" alt="Kare-Kare" class="responsive-img">
+                        <ul class="browser-default">
+                          <li>Manok</li>
+                          <li>Sibuyas</li>
+                          <li>Paminta</li>
+                          <li>Toyo</li>
+                          <li>Suka</li>
+                        </ul>
+                        <p>Ganito magluto ng adobo Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quasi.</p>
                       </div>
+                    </div>
                   </div>
                 </div>
             <!-- </form> -->
