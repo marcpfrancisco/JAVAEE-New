@@ -145,19 +145,19 @@
       <div class="col s12 l6 offset-l2">
         <ul class="tabs">
           <li class="tab col s6">
-            <a href="#dummy" class="blue-grey-text text-darken-1">Dummy</a>
+            <a href="#dummy" class="blue-grey-text text-darken-1">UI/UX</a>
           </li>
           <li class="tab col s6">
-            <a href="#dumm2" class="blue-grey-text text-darken-1">Dummy2</a>
+            <a href="#dumm2" class="blue-grey-text text-darken-1">Back End</a>
           </li>
         </ul>
         <div class="col s12" id="dummy">
-          <p class="flow-text blue-grey-text text-darken-1">Dummy</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id sint autem aspernatur ipsam inventore officiis perferendis quo exercitationem nostrum debitis!</p>
+          <p class="flow-text blue-grey-text text-darken-1">UI/UX</p>
+          <p>The website is designed for easy navigation and to showcase primarily the purpose of this case study. You can easily navigate thru pages with a single click so the user can easy switch pages.</p>
         </div>
         <div class="col s12" id="dumm2">
-            <p class="flow-text blue-grey-text text-darken-1">Dummy2</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id sint autem aspernatur ipsam inventore officiis perferendis quo exercitationem nostrum debitis!</p>
+            <p class="flow-text blue-grey-text text-darken-1">Back End</p>
+            <p>JAVA and a little bit of javascript is used for all of the functionality on the system have. It is a great practice for us to use our knowledge about the language to create small projects.</p>
           </div>
       </div>
     </div>
