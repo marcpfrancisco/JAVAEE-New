@@ -84,12 +84,12 @@
                 </ul>
                 <form action="" method="POST">
                   <div class="input-field col s6">
-                    <input id="num1" name="num1" type="text" class="validate" data-length="8" maxlength="8" >
-                    <label class="active" for="num1">First Number</label>
+                    <input id="num1" name="num1" type="text" class="validate" data-length="16" maxlength="16" >
+                    <label class="active" for="num1">First Name</label>
                   </div>
                   <div class="input-field col s6">
-                    <input id="num2" name="num2" type="text" class="validate" data-length="8" maxlength="8" >
-                    <label class="active" for="num2">Second Number</label>
+                    <input id="num2" name="num2" type="text" class="validate" data-length="16" maxlength="16" >
+                    <label class="active" for="num2">Second Name</label>
                   </div>
                   <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>

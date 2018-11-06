@@ -137,10 +137,9 @@ catch(Exception e)
   <!-- Compiled and minified JavaScript -->
   <script src="../materialize/js/materialize.js"></script>
   <script>
-    function isNumberKey(evt)
-	   {
-		   var keycode = event.which;
-           if (!(event.shiftKey == false && (keycode == 46 || keycode == 8 || keycode == 37 || keycode == 39 || keycode == 110 || (keycode >= 48 && keycode <= 49)))) {
+    function isNumberKey(evt){
+		  var keycode = event.which;
+      if (!(event.shiftKey == false && (keycode == 46 || keycode == 8 || keycode == 37 || keycode == 39 || keycode == 110 || (keycode >= 48 && keycode <= 49)))) {
           event.preventDefault();
        }
 
