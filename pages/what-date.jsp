@@ -95,7 +95,7 @@
                   <div class="col s12 m12 l12">
                     <div id="answer-wrapper" class="center-align">
                       <h5 id="result" style="visibility:hidden;">Result</h5>
-                      <img id="img" class="responsive-img" src="../assets/rabbit.jpeg" style="visibility:hidden;">
+                      <img id="img" class="responsive-img" src="../assets/rabbit.jpeg" style="visibility:hidden;height:300px;">
                     </div>
                   </div>
                 </div>
