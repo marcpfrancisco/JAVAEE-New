@@ -72,7 +72,15 @@
           <div class="card horizontal" style="height: 90vh;">
             <div class="card-stacked">
               <div class="card-content">
-                <form action="" method="POST">
+
+                <!-- Eto yung unang mag sshow
+                First manghihingi muna ng passcode
+                If ( MOM || mOm || mom || Mom || moM ) ang input valid yun
+                otherwise, kahit ano na ininput niya invalid/reject kahit swal nalang siguro yung popup -->
+
+                <!-- Comment ko muna tong form -->
+
+                <!-- <form action="" method="POST">
                   <h4 class="center-align">
                       Enter passcode
                     </h4>
@@ -82,8 +90,24 @@
                     </div>
                     <div class="input-field center-align">
                       <button class="btn waves-effect waves-light teal">Submit</button>    
+                    </div> -->
+
+                    <!-- eto naman yung mag sshow kapag tama yung input -->
+                    <div class="container-fluid">
+                      
+                      <div class="row">
+                          <p class="flow-text">MOM</p>
+                        <div class="input-field col s12 l4">
+                          <i class="material-icons prefix">search</i>
+                          <input type="text" id="autocomplete-input" class="autocomplete">
+                          <label for="autocomplete-input">Recipe</label>
+                        </div> 
+                      </div>
+                      
                     </div>
-                </form>
+                <!-- </form> -->
+
+
               </div>
             </div>
           </div>

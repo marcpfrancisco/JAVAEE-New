@@ -49,7 +49,7 @@
                 <a href="pages/human-randomizer.jsp">Human Randomizer</a>
               </li>
               <li>
-                <a href="pages/passing-chances.jsp">Passing Chances</a>
+                <a href="pages/passing-chance/index.html">Passing Chances</a>
               </li>
               <li>
                 <a href="pages/quiz-app.jsp">Quiz Application</a>
