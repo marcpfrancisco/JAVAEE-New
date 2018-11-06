@@ -54,10 +54,10 @@
             <a href="human-randomizer.jsp">Human Randomizer</a>
           </li>
           <li>
-            <a href="javascript:void(0)">Passing Chances</a>
+            <a href="passing-chance/index.html">Passing Chances</a>
           </li>
           <li>
-            <a href="quiz-app.jsp">Quiz Application</a>
+            <a href="javascript:void(0)">Quiz Application</a>
           </li>
           <li>
             <a href="task-checker.jsp">Task Checker</a>

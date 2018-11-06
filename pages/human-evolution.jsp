@@ -51,7 +51,7 @@
             <a href="human-randomizer.jsp">Human Randomizer</a>
           </li>
           <li>
-            <a href="passing-chances.jsp">Passing Chances</a>
+            <a href="passing-chance/index.html">Passing Chances</a>
           </li>
           <li>
             <a href="quiz-app.jsp">Quiz Application</a>
